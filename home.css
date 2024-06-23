@@ -13,6 +13,30 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+        /* Add the following CSS */
+        #hamburger-toggle {
+            display: none;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            #hamburger-toggle:checked + .hamburger + .navbar-nav {
+                display: flex;
+            }
+        }
+
 .navbar-container {
     display: flex;
     justify-content: space-between;
